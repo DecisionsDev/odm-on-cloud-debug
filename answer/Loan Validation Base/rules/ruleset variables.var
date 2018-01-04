@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>ruleset variables</name>
+  <uuid>66f69a65-d7fa-4596-b8ad-08e837c89800</uuid>
+  <variables name="grade" type="java.lang.String" initialValue="" verbalization="the grade"/>
+  <variables name="score" type="java.lang.Integer" initialValue="" verbalization="the score"/>
+</ilog.rules.studio.model.base:VariableSet>

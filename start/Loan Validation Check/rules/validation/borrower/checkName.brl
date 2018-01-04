@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>checkName</name>
+  <uuid>c5b9e0ce-c668-4a77-9f0a-8ea444e459e0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 
+  the last name of 'the borrower' is empty 
+then
+  in 'the loan report' , reject the data with the message "The borrower's name is empty";
+  print "rejected with message The borrower's name is empty";
+else 
+  print "The borrower's name is not empty.";]]></definition>
+</model.brl:ActionRule>

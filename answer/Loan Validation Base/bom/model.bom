@@ -1,0 +1,113 @@
+
+property origin "xom:/Loan Validation Base/loan-validation-xom"
+property uuid "a5f8bd3d-d967-41bb-94cb-454672e27811"
+package loan;
+
+
+public class Borrower
+        extends java.io.Serializable
+{
+
+    public class Bankruptcy
+            extends java.io.Serializable
+    {
+        public readonly int chapter;
+        public readonly java.util.Date date;
+        public readonly string reason;
+        public Bankruptcy(loan.Borrower arg1, java.util.Date arg2, int arg3, string arg4);
+    }
+
+    public class SSN
+            extends java.io.Serializable
+    {
+        public readonly string areaNumber;
+        public readonly int digits;
+        public readonly string fullNumber;
+        public readonly string groupCode;
+        public readonly string serialNumber;
+        public SSN(loan.Borrower arg1, string arg2);
+        public SSN(loan.Borrower arg1, string arg2, string arg3, string arg4);
+        public string toString();
+    }
+    public readonly loan.Borrower.SSN SSN
+                property "factory.ignore" "true";
+    public readonly string SSNCode;
+    public readonly int age;
+    public readonly java.util.Date birthDate;
+    public int creditScore;
+    public readonly string firstName;
+    public readonly string lastName;
+    public readonly int latestBankruptcyChapter;
+    public readonly java.util.Date latestBankruptcyDate;
+    public readonly string latestBankruptcyReason;
+    public loan.Borrower spouse
+                property "factory.ignore" "true";
+    public readonly loan.Borrower.SSN ssn;
+    public int yearlyIncome;
+    public string zipCode;
+    public Borrower(string firstName, string lastName, java.util.Date birthDate, string SSNCode);
+    public int getBankruptcyAge();
+    public boolean hasLatestBankrupcy();
+    public void setLatestBankruptcy(java.util.Date arg1, int arg2, string arg3);
+    public string toString();
+}
+
+public class DateUtil
+{
+    public DateUtil();
+    public static java.util.Date addDays(java.util.Date arg1, int arg2);
+    public static java.util.Date dateAsDay(java.util.Date arg);
+    public static string format(java.util.Date arg);
+    public static int getAge(java.util.Date arg1, java.util.Date arg2);
+    public static int getDuration(java.util.Date arg1, java.util.Date arg2);
+    public static java.util.Iterator iterator(java.util.Date arg1, java.util.Date arg2);
+    public static java.util.Date makeDate(int arg1, int arg2, int arg3);
+    public static java.util.Date now();
+}
+
+public class LoanRequest
+        extends loan.LoanUtil, java.io.Serializable
+{
+    public readonly int amount;
+    public readonly int duration;
+    public double loanToValue;
+    public readonly int numberOfMonthlyPayments;
+    public readonly java.util.Date startDate;
+    public LoanRequest(java.util.Date startDate, int numberOfMonthlyPayments, int amount, double loanToValue);
+    public string toString();
+}
+
+public class LoanUtil
+        extends java.io.Serializable
+{
+    public LoanUtil();
+    public static boolean containsOnlyDigits(string arg);
+    public static string formattedAmount(double arg);
+    public static string formattedPercentage(double arg);
+    public static double getMonthlyRepayment(double amount, int rate, double arg3);
+}
+
+public class Report
+        extends loan.LoanUtil, java.io.Serializable
+{
+    public boolean approved;
+    public readonly loan.Borrower borrower;
+    public readonly string insurance;
+    public double insuranceRate;
+    public boolean insuranceRequired;
+    public readonly loan.LoanRequest loan;
+    public readonly string message;
+    public readonly java.util.List messages domain 0,* class string;
+    public double monthlyRepayment;
+    public boolean validData;
+    public double yearlyInterestRate;
+    public readonly double yearlyRepayment;
+    public Report(loan.Borrower arg1, loan.LoanRequest arg2);
+    public void addMessage(string arg);
+    public void approveLoan(string message);
+    public void rejectData(string message);
+    public void rejectLoan(string message)
+                property update "true";
+    public string toString();
+}
+

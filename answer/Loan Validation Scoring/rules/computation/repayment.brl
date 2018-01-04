@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>repayment</name>
+  <uuid>b1ade762-dc28-4abc-8033-e300be183560</uuid>
+  <priority>-1000000</priority>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+    set amount to the amount of 'the loan'; 
+    set duration to the number of monthly payments of 'the loan';
+    set rate to the yearly interest rate of 'the loan report';
+
+then 
+    set the monthly repayment of 'the loan report' to 
+        the computed monthly repayment for a loan of amount during duration with a yearly rate of rate ;
+    print "monthly repayment calculated.";
+
+]]></definition>
+  <status>deployable</status>
+</model.brl:ActionRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>checkCreditScore</name>
+  <uuid>c8dafd02-cb18-4a33-ba0c-ec0dfd12e8b8</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+    set 'minimum score' to 200 ;
+if 
+    the credit score of 'the borrower' is less than 'minimum score' 
+then 
+    in 'the loan report', refuse the loan with the message "Credit score below " + 'minimum score' ;
+]]></definition>
+</model.brl:ActionRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.query:Query xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore">
+  <name>Approval</name>
+  <uuid>10a6b051-3b0f-42fb-b7c5-db678c726e30</uuid>
+  <definition><![CDATA[Find all business rules 
+	 such that the definition of each business rule contains "Your loan has not been approved" ]]></definition>
+  <locale>en_US</locale>
+</ilog.rules.studio.model.query:Query>

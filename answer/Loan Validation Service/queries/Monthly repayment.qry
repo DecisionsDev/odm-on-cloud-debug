@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.query:Query xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore">
+  <name>Monthly repayment</name>
+  <uuid>f77901ee-5beb-4642-ad59-d44010606484</uuid>
+  <definition><![CDATA[Find all business rules 
+	 such that the definition of each business rule contains "monthly repayment" ]]></definition>
+  <locale>en_US</locale>
+</ilog.rules.studio.model.query:Query>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>checkAge</name>
+  <uuid>b0361335-f157-4660-a3dc-146c8e301ddb</uuid>
+  <documentation><![CDATA[Ensure the age of the borrower is correct]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+  set 'minAge' to 0; 
+  set 'maxAge' to 150;
+
+if 
+  it is not true that the age of 'the borrower' is between minAge and maxAge
+then
+  in 'the loan report' , reject the data with the message "The borrower's age is not valid.";
+  print "rejected with message The borrower's age is not valid.";
+else
+  print "The borrower's age is valid.";
+  ]]></definition>
+</model.brl:ActionRule>

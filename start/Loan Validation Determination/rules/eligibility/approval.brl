@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>approval</name>
+  <uuid>350b2987-2b8e-4a0c-99fe-d06ab0af90ba</uuid>
+  <priority>-1000000</priority>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 
+    'the grade' is one of { "A" , "B" , "C" } 
+then 
+    in 'the loan report', accept the loan with the message "Congratulations! Your loan has been approved" ;
+else 
+    in 'the loan report', refuse the loan with the message "We are sorry. Your loan has not been approved" ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

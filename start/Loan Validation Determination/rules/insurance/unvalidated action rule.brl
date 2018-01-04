@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>unvalidated action rule</name>
+  <uuid>67bf4528-7e1c-4ef0-8089-3407e1d0c224</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then print "unvalidated rule called"; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

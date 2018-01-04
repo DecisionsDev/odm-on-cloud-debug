@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.query:Query xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore">
+  <name>gradeSet</name>
+  <uuid>7e083d09-3ab4-41dd-af4e-cf91e8d1454a</uuid>
+  <definition><![CDATA[Find all business rules 
+	 such that each business rule may lead to a state where [ 'the grade' is not one of { "A", "B", "C" } ]  ]]></definition>
+  <locale>en_US</locale>
+</ilog.rules.studio.model.query:Query>

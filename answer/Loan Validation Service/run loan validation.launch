@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.rules.studio.decisionservice.launching.DecisionOperation">
+<stringAttribute key="com.ibm.rules.studio.decisionservice.ui.OPERATION_PATH" value="/Loan Validation Service/deployment/loan validation with score and grade"/>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_FUNCT_SIGN">
+<mapEntry key="borrower" value="function loan.Borrower get_borrower_value()"/>
+<mapEntry key="loan" value="function loan.LoanRequest get_loan_value()"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_FUNCT_VALUES">
+<mapEntry key="borrower" value="java.util.Date birthDate = loan.DateUtil.makeDate(1950,1,1);&#13;&#10;loan.Borrower borrower = new loan.Borrower(&quot;Smith&quot;,&quot;John&quot;,birthDate, &quot;123121234&quot;);&#13;&#10;borrower.creditScore = 200;&#13;&#10;borrower.yearlyIncome = 20000;&#13;&#10;return borrower;"/>
+<mapEntry key="loan" value="java.util.Date loanDate = new java.util.Date();&#13;&#10;loan.LoanRequest loan = new loan.LoanRequest(loanDate,48,100000,1.2);&#13;&#10;return loan;"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_NAMES">
+<mapEntry key="borrower" value="borrower"/>
+<mapEntry key="loan" value="loan"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_SIMPLE_VALUES">
+<mapEntry key="borrower" value=""/>
+<mapEntry key="loan" value=""/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_TYPES">
+<mapEntry key="borrower" value="2"/>
+<mapEntry key="loan" value="2"/>
+</mapAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Loan Validation Service"/>
+<listEntry value="/Loan Validation Service"/>
+<listEntry value="/Loan Validation Service/deployment/loan validation with score and grade.dop"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Loan Validation Service"/>
+</launchConfiguration>

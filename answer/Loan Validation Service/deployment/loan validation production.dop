@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="loan_validation_production" usingRuleflow="true" ruleflowName="loanvalidation" usingExtractor="true" targetRuleProjectName="Loan Validation Service">
+  <name>loan validation production</name>
+  <uuid>7e5cbd47-fb79-4430-a17c-85ec1b2ebe6c</uuid>
+  <description><![CDATA[Used in production
+   - input a loan request and a borrower
+   - output the loan report.
+Rules from projects : Check, Determination and Scoring
+with an extraction mechanism through a query: only rules with the validated status are used.
+]]></description>
+  <referencedVariables variableName="borrower" variableSetName="parameters">
+    <variableSet href="../../Loan%20Validation%20Base/rules/parameters.var#3abc737a-ba41-4dcf-a7d1-012b9484f9f8"/>
+  </referencedVariables>
+  <referencedVariables variableName="loan" variableSetName="parameters">
+    <variableSet href="../../Loan%20Validation%20Base/rules/parameters.var#3abc737a-ba41-4dcf-a7d1-012b9484f9f8"/>
+  </referencedVariables>
+  <referencedVariables variableName="report" variableSetName="parameters" direction="OUT">
+    <variableSet href="../../Loan%20Validation%20Base/rules/parameters.var#3abc737a-ba41-4dcf-a7d1-012b9484f9f8"/>
+  </referencedVariables>
+  <ruleflow href="../rules/loanvalidation.rfl#f5dc0b49-f2a1-467d-abb0-059d6e0d5c62"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="validated rules operation_extractor" validator="Default Validator">
+    <query href="../queries/validated%20rules%20query.qry#2ea0f1ac-f84b-4ae6-a617-c361168d274d"/>
+  </extractor>
+  <targetRuleProject href="../../Loan%20Validation%20Service#4ea8ed3f-98a0-4b25-853c-6cc857215ae8"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

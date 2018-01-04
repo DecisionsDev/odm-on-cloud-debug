@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>checkIncome</name>
+  <uuid>c7be44d1-ca4c-4108-92e2-3816134e66a2</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+    set 'minimum income' to 0.37 * the yearly income of 'the borrower';
+if 
+    the yearly repayment of 'the loan report' is at least 'minimum income'
+then 
+    in 'the loan report', refuse the loan with the message "Too big Debt/Income ratio: " + (formatted amount) the yearly repayment of 'the loan report' / the yearly income of 'the borrower'; 
+
+]]></definition>
+</model.brl:ActionRule>

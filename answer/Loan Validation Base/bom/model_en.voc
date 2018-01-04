@@ -1,0 +1,86 @@
+# Vocabulary Properties
+file = /loanvalidation-rules/bom/model_en.voc
+uuid = 298ef717-efd8-4b46-9bfc-28f2f82612b0
+
+# Term: age of the latest bankruptcy
+@age\ of\ the\ latest\ bankruptcy#plural = ages of latest bankruptcies
+
+# Term: number of digits
+@number\ of\ digits#plural = numbers of digits
+
+# loan.Borrower
+loan.Borrower#concept.label = borrower
+
+# loan.Borrower.Bankruptcy
+loan.Borrower.Bankruptcy#concept.label = bankruptcy
+loan.Borrower.Bankruptcy.chapter#phrase.navigation = {chapter} of {this}
+loan.Borrower.Bankruptcy.date#phrase.navigation = {date} of {this}
+loan.Borrower.Bankruptcy.reason#phrase.navigation = {reason} of {this}
+
+# loan.Borrower.SSN
+loan.Borrower.SSN#concept.label = SSN
+loan.Borrower.SSN.areaNumber#phrase.navigation = {area number} of {this}
+loan.Borrower.SSN.digits#phrase.navigation = {number of digits} of {this}
+loan.Borrower.SSN.fullNumber#phrase.navigation = {full number} of {this}
+loan.Borrower.SSN.groupCode#phrase.navigation = {group code} of {this}
+loan.Borrower.SSN.serialNumber#phrase.navigation = {serial number} of {this}
+loan.Borrower.SSNCode#phrase.navigation = {SSNCode} of {this}
+loan.Borrower.age#phrase.navigation = {age} of {this}
+loan.Borrower.birthDate#phrase.navigation = {birth date} of {this}
+loan.Borrower.creditScore#phrase.action = set the credit score of {this} to {credit score}
+loan.Borrower.creditScore#phrase.navigation = {credit score} of {this}
+loan.Borrower.firstName#phrase.navigation = {first name} of {this}
+loan.Borrower.getBankruptcyAge()#phrase.navigation = {age of the latest bankruptcy} of {this}
+loan.Borrower.hasLatestBankrupcy()#phrase.navigation = {this} has filed a bankruptcy
+loan.Borrower.lastName#phrase.navigation = {last name} of {this}
+loan.Borrower.latestBankruptcyChapter#phrase.navigation = {latest bankruptcy chapter} of {this}
+loan.Borrower.latestBankruptcyDate#phrase.navigation = {latest bankruptcy date} of {this}
+loan.Borrower.latestBankruptcyReason#phrase.navigation = {latest bankruptcy reason} of {this}
+loan.Borrower.spouse#phrase.action = set the spouse of {this} to {spouse}
+loan.Borrower.spouse#phrase.navigation = {spouse} of {this}
+loan.Borrower.ssn#phrase.navigation = {SSN} of {this}
+loan.Borrower.yearlyIncome#phrase.action = set the yearly income of {this} to {yearly income}
+loan.Borrower.yearlyIncome#phrase.navigation = {yearly income} of {this}
+loan.Borrower.zipCode#phrase.action = set the zip code of the address of {this} to {zip code}
+loan.Borrower.zipCode#phrase.navigation = {zip code} of the address of {this}
+
+# loan.LoanRequest
+loan.LoanRequest#concept.label = loan
+loan.LoanRequest.amount#phrase.navigation = {amount} of {this}
+loan.LoanRequest.duration#phrase.navigation = {duration} (in years) of {this}
+loan.LoanRequest.loanToValue#phrase.action = set the Loan to Value of {this} to {Loan to Value}
+loan.LoanRequest.loanToValue#phrase.navigation = {Loan to Value} of {this}
+loan.LoanRequest.numberOfMonthlyPayments#phrase.navigation = {number of monthly payments} of {this}
+loan.LoanRequest.startDate#phrase.navigation = {start date} of {this}
+
+# loan.LoanUtil
+loan.LoanUtil#concept.label = loan util
+loan.LoanUtil.containsOnlyDigits(java.lang.String)#phrase.navigation = {0} contains only digits
+loan.LoanUtil.formattedAmount(double)#phrase.navigation = (formatted amount) {0}
+loan.LoanUtil.formattedPercentage(double)#phrase.navigation = (formatted percentage) {0}
+loan.LoanUtil.getMonthlyRepayment(double,int,double)#phrase.navigation = the computed monthly repayment for a loan of {0, <amount>} during {1, <months>} with a yearly rate of {2, <rate>}
+
+# loan.Report
+loan.Report#concept.label = report
+loan.Report.addMessage(java.lang.String)#phrase.action = in {this}, add the message {0}
+loan.Report.approveLoan(java.lang.String)#phrase.action = in {this}, accept the loan with the message {0}
+loan.Report.approved#phrase.action = set the approved of {this} to {approved}
+loan.Report.approved#phrase.navigation = {this} is approved
+loan.Report.borrower#phrase.navigation = {borrower} of {this}
+loan.Report.insurance#phrase.navigation = {insurance} of {this}
+loan.Report.insuranceRate#phrase.action = set the insurance rate in {this} to {insurance rate}
+loan.Report.insuranceRate#phrase.navigation = {insurance rate} of {this}
+loan.Report.insuranceRequired#phrase.action = set insurance required in {this} to {insurance required}
+loan.Report.insuranceRequired#phrase.navigation = {this} is insurance required
+loan.Report.loan#phrase.navigation = {loan} of {this}
+loan.Report.message#phrase.navigation = {message} of {this}
+loan.Report.messages#phrase.navigation = {message} of {this}
+loan.Report.monthlyRepayment#phrase.action = set the monthly repayment of {this} to {monthly repayment}
+loan.Report.monthlyRepayment#phrase.navigation = {monthly repayment} of {this}
+loan.Report.rejectData(java.lang.String)#phrase.action = in {this}, reject the data with the message {0}
+loan.Report.rejectLoan(java.lang.String)#phrase.action = in {this}, refuse the loan with the message {0}
+loan.Report.validData#phrase.action = set the valid data of {this} to {valid data}
+loan.Report.validData#phrase.navigation = {this} is valid data
+loan.Report.yearlyInterestRate#phrase.action = set the yearly interest rate of {this} to {yearly interest rate}
+loan.Report.yearlyInterestRate#phrase.navigation = {yearly interest rate} of {this}
+loan.Report.yearlyRepayment#phrase.navigation = {yearly repayment} of {this}

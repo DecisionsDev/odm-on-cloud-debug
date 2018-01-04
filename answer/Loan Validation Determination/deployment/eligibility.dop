@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="determination_test" usingRuleflow="true" ruleflowName="eligibilityFlow" targetRuleProjectName="Loan Validation Determination">
+  <name>eligibility</name>
+  <uuid>bfd94025-3f29-48be-81b9-9eb2676f252f</uuid>
+  <description><![CDATA[Used for testing eligibility rules contained in the 'Loan Validation Determination' project.
+No rule extraction is applied.
+It takes as inputs a borrower, a loan request, and a score.
+It outputs the loan report and the grade.
+
+]]></description>
+  <referencedVariables variableName="borrower" variableSetName="parameters">
+    <variableSet href="../../Loan%20Validation%20Base/rules/parameters.var#3abc737a-ba41-4dcf-a7d1-012b9484f9f8"/>
+  </referencedVariables>
+  <referencedVariables variableName="loan" variableSetName="parameters">
+    <variableSet href="../../Loan%20Validation%20Base/rules/parameters.var#3abc737a-ba41-4dcf-a7d1-012b9484f9f8"/>
+  </referencedVariables>
+  <referencedVariables variableName="report" variableSetName="parameters" direction="OUT">
+    <variableSet href="../../Loan%20Validation%20Base/rules/parameters.var#3abc737a-ba41-4dcf-a7d1-012b9484f9f8"/>
+  </referencedVariables>
+  <referencedVariables variableName="score" variableSetName="ruleset variables.var">
+    <variableSet href="../../Loan%20Validation%20Base/rules/ruleset%20variables.var#66f69a65-d7fa-4596-b8ad-08e837c89800"/>
+  </referencedVariables>
+  <referencedVariables variableName="grade" variableSetName="ruleset variables.var" direction="OUT">
+    <variableSet href="../../Loan%20Validation%20Base/rules/ruleset%20variables.var#66f69a65-d7fa-4596-b8ad-08e837c89800"/>
+  </referencedVariables>
+  <ruleflow href="../rules/eligibilityFlow.rfl#966338e1-cfde-4e21-861b-3a7335ff0df2"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="unchecked determination_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Loan%20Validation%20Determination#a2912fa3-51a9-4041-bc88-d100f2d705ba"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

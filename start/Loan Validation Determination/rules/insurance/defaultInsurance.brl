@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>defaultInsurance</name>
+  <uuid>842c35bf-47f4-41f5-a6f8-f43dfe302609</uuid>
+  <priority>-1000000</priority>
+  <locale>en_US</locale>
+  <definition><![CDATA[then 
+    set insurance required in 'the loan report' to true ;
+    set the insurance rate in 'the loan report' to 0.02 ;
+]]></definition>
+  <status>validated</status>
+</ilog.rules.studio.model.brl:ActionRule>

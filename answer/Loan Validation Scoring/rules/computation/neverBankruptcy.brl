@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>neverBankruptcy</name>
+  <uuid>2ee02474-d7ae-4410-beba-d3b55a6df36f</uuid>
+  <priority></priority>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 
+    it is not true that 'the borrower' has filed a bankruptcy 
+then 
+    set 'the score' to 'the score' + 20;
+]]></definition>
+</model.brl:ActionRule>
