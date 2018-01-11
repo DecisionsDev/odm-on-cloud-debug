@@ -128,7 +128,7 @@ workspaces.</p></div>
 <ol class="ol steps">
 <li class="li step stepexpand"><span class="ph cmd">Close the Eclipse Welcome page to see the Rule perspective. If the Rule perspective is not open, click Window > Open Perspective > Other > Rule to open the perspective.</span></li>
 <li class="li step stepexpand"><span class="ph cmd">Click File > Import. In the Import wizard, expand General > Existing Projects into Workspace, and click Next.</span></li>
-<li class="li step stepexpand"><span class="ph cmd">Choose Select root directory, browse to <samp class="ph codeph"><i>DownloadDir</i>/answer</samp>, and click Select All. In Options, click Copy projects into workspace, and then click OK.</span></li>
+<li class="li step stepexpand"><span class="ph cmd">Choose Select root directory. Browse to <samp class="ph codeph"><i>DownloadDir</i>/answer</samp>, click Select All, and in Options, click Copy projects into workspace.</span></li>
 <li class="li step stepexpand"><span class="ph cmd">Click Finish.</span></li>
 </ol>
 <p class="p">The Rule Explorer displays six
@@ -165,7 +165,7 @@ service.<br>
 <ol class="ol steps">
 <li class="li step stepexpand"><span class="ph cmd">Close the Eclipse Welcome page to see the Rule perspective. If the Rule perspective is not open, click Window > Open Perspective > Other > Rule to open the perspective.</span></li>
 <li class="li step stepexpand"><span class="ph cmd">Click File > Import. In the Import wizard, expand General > Existing Projects into Workspace, and click Next.</span></li>
-<li class="li step stepexpand"><span class="ph cmd">Choose Select root directory, browse to <samp class="ph codeph"><i>DownloadDir</i>/start</samp>, and click Select All. In Options, click Copy projects into workspace, and then click OK.</span></li>
+<li class="li step stepexpand"><span class="ph cmd">Choose Select root directory. Browse to <samp class="ph codeph"><i>DownloadDir</i>/start</samp>, click Select All, and in Options, click Copy projects into workspace.</span></li>
 <li class="li step stepexpand"><span class="ph cmd">Click Finish.</span></li>
 </ol><p class="p">Eclipse switches to the Rule perspective. The Rule Explorer displays six
 projects:</p>
