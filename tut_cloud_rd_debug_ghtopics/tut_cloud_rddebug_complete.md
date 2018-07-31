@@ -26,7 +26,13 @@ The Rule Explorer displays six projects:
 
 The Java™ project loan-validation-xom defines an execution object model \(XOM\) for rule execution. The main decision service, Loan Validation Service, references the other projects.
 
-5.   Click **Run**. The Console view displays the following results, which show that the input data is valid and the loan is approved:
+5.   In the **Run** menu, select **Run Configuration**.
+
+6.   Expand **Decision Operation**, and click the run loan validation configuration:
+
+![Image shows the run configuration.](../tut_cloud_rd_debug_ghimages/scrn_debug_runconfig.jpg)
+
+7.   Click **Run**. The Console view displays the following results, which show that the input data is valid and the loan is approved:
 
 ![Image shows the results from running the decision service.](../tut_cloud_rd_debug_ghimages/scrn_debug_answerresults.jpg)
 
